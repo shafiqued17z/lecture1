@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        h1, h2 {
+            color: orange;
+        }
+
+        /* ol li {
+            color: orangered;
+        } */
+
+        /* ol > li {
+            color: palegreen;
+        } */
+
+        /* input[type=text] {
+            background-color: red;
+        }
+
+        input[type=number] {
+            background-color: rosybrown;
+        } */
+        /* button {
+            font-size: 24px;
+            width: 200px;
+            height: 50px;
+            background-color: darkcyan;
+        }
+        button:hover{
+            background-color: darkgoldenrod;
+        } */
+
+        /* a::before {
+            content: "\212d  Click here";
+            font-weight: bold;
+        } */
+
+        p::selection {
+            color: rgb(12, 12, 12);
+            background-color: rgb(255, 197, 49);
+        }
+    </style>
+</head>
+<body>
+    Selection selector:
+    <p>
+        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+    </p>
+    Comma selector:
+    <h1>Hi, How are you!?</h1>
+    <h2>I'm good. Thank you!</h2>
+
+    descendant selector:
+    <ol>
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+        <ul>
+            <li>Sublist Item one</li>
+            <li>Sublist Item two</li>
+        </ul>
+        <li>list item 4</li>
+    </ol>
+
+    child selector:
+    <ol>
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+        <ul>
+            <li>Sublist Item one</li>
+            <li>Sublist Item two</li>
+        </ul>
+        <li>list item 4</li>
+    </ol>
+    psuedo-class selector
+    <button>Click Me!</button> <br>
+
+    psuedo-element Selectors
+    <ul>
+        <li> <a href="#"> Learn more about crawling and indexing</a> </li>
+        <li> <a href="#"> Link 2</a> </li>
+        <li> <a href="#"> Link 3</a> </li>
+    </ul>
+
+    attribute selector:
+    <form>
+        <input type="text" name="name" placeholder="What's your name?">
+        <input type="number" name="name" placeholder="How old are you?">
+    </form>
+</body>
+</html>
